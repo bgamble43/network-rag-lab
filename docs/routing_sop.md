@@ -9,3 +9,5 @@
   ip route 0.0.0.0 0.0.0.0 10.1.1.1
   ip route 0.0.0.0 0.0.0.0 10.2.2.2 10
   ```
+## Sticky Routes
+ - Always add glue.
