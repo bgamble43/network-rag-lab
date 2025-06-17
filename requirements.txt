@@ -2,4 +2,3 @@ openai
 langchain
 langchain-community
 python-dotenv
-unstructured[all-docs]
