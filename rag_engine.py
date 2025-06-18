@@ -1,11 +1,14 @@
 import os
 from dotenv import load_dotenv
+
+from langchain.chains import RetrievalQA
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+from langchain_community.llms import OpenAI
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.chains import RetrievalQA
-from langchain_community.llms import OpenAI
+
 
 def build_rag_chain(docs_path="./docs", chunk_size=500):
     load_dotenv()
