@@ -10,6 +10,7 @@
    no shut
   interface Vlan2
    ip address a.b.c.d w.x.y.z
+   no ip proxy-arp
   end
   ```
 
