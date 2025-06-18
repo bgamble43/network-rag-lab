@@ -7,7 +7,7 @@ def main():
     args = parser.parse_args()
 
     qa = build_rag_chain()
-    result = qa(args.question)
+    result = qa.invoke(args.question)
 
     print("\n📌 Answer:\n" + result["result"])
     print("\n📚 Source Files:")
