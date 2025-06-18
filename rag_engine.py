@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 from langchain.chains import RetrievalQA
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-from langchain_community.llms import OpenAI
-from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_openai import OpenAI, OpenAIEmbeddings
+
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
 
