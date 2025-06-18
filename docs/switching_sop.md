@@ -2,7 +2,7 @@
 
 ## Static Routes
 - When creating a VLAN interface and the VLAN is 1, issue no shut command at end of stanza.
-- Other VLANs are enabled by default and don't need to be no shut
+- Any VLAN other than VLAN 1 should have proxy arp disabled.
 - Example:
   ```
   interface Vlan1
