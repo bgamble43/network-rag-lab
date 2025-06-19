@@ -10,6 +10,7 @@ A starter for a Cisco‑focused RAG assistant in Python + LangChain + FAISS, con
    git clone https://github.com/YOUR_USERNAME/network-rag-lab.git
    cd network-rag-lab
    echo "OPENAI_API_KEY=sk-…" > .env
+   pip install -r requirements.txt
    python ask_routing.py "What AD for backup static routes?"
    ```
 
